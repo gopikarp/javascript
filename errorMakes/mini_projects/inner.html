@@ -1,0 +1,28 @@
+<!-- //innerHTML
+<div id="one">
+    <h1>hello</h1>
+  
+</div>
+<script>
+    var div = document.getElementById("one")
+    // console.log(div.innerHTML)//using innerhtml we can take text and inside tag
+    div.innerHTML = " <h1>byy</h1>"//"<button>dsfs</button>"
+</script> -->
+
+<!-- selcting ellements -->
+<div class="one">
+    <h1>hellodd</h1>
+  
+</div>
+<h1 id="h">hellodd</h1>
+<!-- <h1>hellodd</h1> -->
+
+<script>
+    var div = document.querySelector(".one")
+    var h1 = document.querySelectorAll("h")
+    console.log(div)
+    console.log(h1)
+    div.textContent = 'myggg'
+
+
+</script>

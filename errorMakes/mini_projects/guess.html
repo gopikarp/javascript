@@ -1,0 +1,29 @@
+<!-- guess the number -->
+<h1>miniProject</h1>
+<h1>Guess the number</h1>
+<input id="guessNum">
+<button  onclick="check()">Check</button>
+<h3 id="result">you are Rrite/Wrong</h3>
+<h3 id="score">Score:10</h3>  
+
+<script>
+    var gussnumber = document.getElementById("guessNum")
+    var result = document.getElementById("result")
+    var score = document.getElementById("score")
+    var randomNumber = Math.floor(Math.random()*10)+1
+var totalScore = 10
+    function check(){
+        var enterdNumber = gussnumber.value
+        if(randomNumber == enterdNumber){
+            console.log("Right")
+            result.textContent = "Right"
+            alert("congradulations")
+        }else{
+            totalScore = totalScore - 1
+            score.textContent = "score: "+ totalScore
+            console.log("Wrong")
+             result.textContent = "Wrong"
+        }
+
+    }
+</script>

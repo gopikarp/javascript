@@ -1,0 +1,14 @@
+<h2>enter your text</h2>
+
+<input id="inputBox" onkeyup="update()">
+<br>
+<h1 id="text"></h1>
+<script>
+    var myInputs = document.getElementById("inputBox")
+    var mytext = document.getElementById("text")
+function update(){
+  
+mytext.textContent = myInputs.value
+
+}
+</script>

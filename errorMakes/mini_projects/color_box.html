@@ -1,0 +1,22 @@
+<h1>color_box miniProject</h1>
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        transition: 2s;
+    }
+    .widthmax{
+        width: 800px;
+    }
+</style>
+<div id="box"></div>
+<br>
+<button  onclick="changer()">change Button</button>
+<script>
+    var myBox = document.getElementById("box")
+    function changer(){
+        myBox.style.backgroundColor = "red"
+        myBox.setAttribute("class","widthmax")
+    }
+</script>

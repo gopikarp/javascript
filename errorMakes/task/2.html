@@ -1,0 +1,36 @@
+<button onclick=" update()">Add Hello</button>
+<br>
+<div id="text"></div>
+<br>
+<script>
+var mytext = document.getElementById("text")
+
+function update(){
+var h1Tag = document.createElement("h1")
+
+h1Tag.textContent = "hello"
+
+mytext.append(h1Tag)
+
+}
+
+</script>
+
+
+<!-- <button id="bt" onclick="printer()">Add Hello</button>
+<br>
+<h2 id="text"></h2>
+<br>
+
+<script>
+  
+       var myText = document.getElementById("text")
+
+       function printer(){
+       // mytext.textContent = "hello"
+      // mytext.append("hello")
+var lineBreak = document.createElement("br");//<br>
+myText.append("Hello")
+myText.append(lineBreak)
+  }
+</script> -->

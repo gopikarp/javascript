@@ -1,0 +1,37 @@
+
+<h1 id="hTag">text</h1>
+
+
+<button onclick="update(event)">john</button>
+<button onclick="update(event)">hari</button>
+<button onclick="update(event)">ammu</button>
+
+
+<script>
+     var hTag = document.getElementById("hTag")
+     function update(event){
+        console.log(event.target.textContent)
+        hTag.textContent=event.target.textContent
+     }
+</script>
+
+<!-- //we need to print exact what given inside the button not new text
+<h1 id="hTag">text</h1>
+<button id="j" onclick="jupdate()">john</button>
+<button id="h" onclick="hupdate()">hari</button>
+<button id="a" onclick="aupdate()">ammu</button>
+
+<script>
+    var hTag = document.getElementById("hTag")
+var jBt = document.getElementById("j")
+
+function jupdate(){
+    hTag.textContent = "John"
+}
+function hupdate(){
+    hTag.textContent = "Hari"
+}
+function aupdate(){
+    hTag.textContent = "Ammu"
+}
+</script> -->
