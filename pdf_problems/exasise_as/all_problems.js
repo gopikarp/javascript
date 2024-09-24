@@ -291,20 +291,70 @@ Input: HELLO
 Output: Entered string is not a palindrome
  */
 
-const read = require("prompt-sync")()
-let inp = read("Enter a string ")
+// const read = require("prompt-sync")()
+// let inp = read("Enter a string ")
+// inp = inp.toLowerCase();
+// let splitStr = inp.split("")
+// let reversStr = splitStr.reverse()
+// let joinStr = reversStr.join("")
 
-let splitStr = inp.split("")
-let reversStr = splitStr.reverse()
-let joinStr = reversStr.join("")
+// if(inp == joinStr){
+//     console.log(" Entered string is a palindrome");
+    
+// }else{
+//     console.log("Entered string is not a palindrome");
+    
+// }
+// ---------------------------------//-------------------------------------
 
-if(inp == joinStr){
-    console.log(" Entered string is a palindrome");
-    
-}else{
-    console.log("Entered string is not a palindrome");
-    
+/*
+
+14. Write a program to add to two dimensional arrays
+a. Program should accept two 2D arrays and display its sum
+Eg: Output: Enter the size of arrays
+Input: 3
+Output: Enter the values of array 1
+Input:
+1 2 3
+4 5 6
+7 8 9
+Output: Enter the values of array 2
+Input:
+10 20 30
+40 50 60
+70 80 90
+Output: Sum of 2 arrays is:
+11 22 33
+44 55 66
+77 88 99
+*/
+
+
+const read = require('prompt-sync')();
+const array1 = [], array2 = [], array3 = [];
+let limit = read("Enter the size of the array : ");
+console.log("Enter the elements of array1 ")
+for(let i = 0; i < limit; i++){
+array1[i] = []
+for(let j = 0; j < limit; j++) {
+array1[i][j] = read();
 }
-//---------------------------------//-------------------------------------
+}
+console.log("Enter the elements of array2")
+for(let i = 0; i < limit; i++){
+array2[i] = []
+for(let j = 0; j < limit; j++) {
+array2[i][j] = read();
+}
+}
+for(let i = 0; i < limit; i++){
+array3[i] = []
+for(let j = 0; j < limit; j++) {
+array3[i][j] = parseFloat(array1[i][j]) +
+parseFloat(array2[i][j])
+}
+}
+console.log("Sum of the 2 arrays: ")
+console.log(array3)
 
-// /*
+
