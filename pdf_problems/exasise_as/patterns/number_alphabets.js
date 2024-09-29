@@ -26,32 +26,66 @@
 ////////------------------------
 
   
-// problem - 1 (number pattern)
-// let n = 5; 
-// let string = "";
-// // External loop
-// for (let i = 1; i <= n; i++) {
-//   // Internal loop
-//   for (let j = 1; j <i; j++) {
-//     string += j;
+/*
+problem - 1 (number pattern)
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+*/
+// let limit = 5
+// let str = ""
+// for(i=1; i<=limit;i++){
+//   for(j=1;j<=i;j++){
+//     str += j + " "
 //   }
-//   string += "\n";
+//   str += "\n"
 // }
-// console.log(string);
+// console.log(str)
+
+// ---------------------------------//-------------------------------------
 
 
-////////------------------------
-  
-
-// problem - 2 (number pattern)
-// let n = 5;
-// let string = "";
-
-// for (let i = 1; i <= n; i++) {
-//   for (let j = 1; j <= i; j++) {
-//     string += i;
-//   }
-//   string += "\n";
+/*
+problem - 2 (number pattern)
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+*/
+// let limit = 5
+// let string = ""
+// for(i=0;i<= limit;i++){
+//     for(j=0;j<i;j++){
+//         string += i + " "
+//     }
+//     string += "\n"
 // }
-// console.log(string);
-////////------------------------
+// console.log(string)
+
+// ---------------------------------//-------------------------------------
+
+/*
+problem - 3 (number pattern)
+1
+2 3
+4 5 6
+7 8 9 10
+*/
+// let limit = 5
+// let string = ""
+// let val = 1
+
+// for(i=1;i<=limit;i++){
+//     for(j=1;j<=i;j++){
+//     // string = string + i
+//     string = string + val
+//     val++
+//     }
+//     string += "\n";
+// }
+// console.log(string)
+
+// ---------------------------------//-------------------------------------

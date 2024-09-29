@@ -330,31 +330,337 @@ Output: Sum of 2 arrays is:
 */
 
 
-const read = require('prompt-sync')();
-const array1 = [], array2 = [], array3 = [];
-let limit = read("Enter the size of the array : ");
-console.log("Enter the elements of array1 ")
-for(let i = 0; i < limit; i++){
-array1[i] = []
-for(let j = 0; j < limit; j++) {
-array1[i][j] = read();
-}
-}
-console.log("Enter the elements of array2")
-for(let i = 0; i < limit; i++){
-array2[i] = []
-for(let j = 0; j < limit; j++) {
-array2[i][j] = read();
-}
-}
-for(let i = 0; i < limit; i++){
-array3[i] = []
-for(let j = 0; j < limit; j++) {
-array3[i][j] = parseFloat(array1[i][j]) +
-parseFloat(array2[i][j])
-}
-}
-console.log("Sum of the 2 arrays: ")
-console.log(array3)
+// const read = require('prompt-sync')();
+// const array1 = [], array2 = [], array3 = [];
+// let limit = read("Enter the size of the array : ");
+// console.log("Enter the elements of array1 ")
+// for(let i = 0; i < limit; i++){
+// array1[i] = []
+// for(let j = 0; j < limit; j++) {
+// array1[i][j] = read();
+// }
+// }
+// console.log("Enter the elements of array2")
+// for(let i = 0; i < limit; i++){
+// array2[i] = []
+// for(let j = 0; j < limit; j++) {
+// array2[i][j] = read();
+// }
+// }
+// for(let i = 0; i < limit; i++){
+// array3[i] = []
+// for(let j = 0; j < limit; j++) {
+// array3[i][j] = parseFloat(array1[i][j]) +
+// parseFloat(array2[i][j])
+// }
+// }
+// console.log("Sum of the 2 arrays: ")
+// console.log(array3)
 
+// ---------------------------------//-------------------------------------
+
+// 15. Write a program to accept an array and display it on the console using functions
+// a. Program should contain 3 functions including main() function
+// main()
+// 1. Declare an array
+// 2. Call function getArray()
+// 3. Call function displayArray()
+// getArray()
+// 1. Get values to the array
+// displayArray()
+// 1. Display the array values
+
+// const read = require('prompt-sync')();
+
+// function mainFunction(){
+//     let   array=[]
+//     getArray();
+//     displayArray()
+
+//     function getArray(){
+
+// let limit = read("Enter the array limit :")
+
+// console.log("Enter the values of array");
+
+// for(let i = 0; i < limit; i++){
+//   array[i] = read()
+// }
+
+//     }
+//     function displayArray(){
+//         console.log("You have entered : " + array)
+//     }
+
+
+
+// }
+
+// mainFunction()
+
+// ---------------------------------//-------------------------------------
+
+// 16. Write a program to check whether a given number is prime or not
+// a. Program should accept an input from the user and display whether the
+// number is prime or not
+// Eg: Output: Enter a number
+// Input: 7
+// Output: Entered number is a Prime number
+
+// const read = require('prompt-sync')();
+// let isPrime = 0;
+// let number = read('Enter the number')
+
+// for(let i = 2; i <number; i++){
+//     if(number%i ==0){
+// isPrime = 1;
+// break;
+//     }
+// }
+//   if(isPrime==0){
+//     console.log('number is a Prime number');
+
+//   }else{
+//     console.log('Entered number is not a Prime number');
+//   }
+
+// ---------------------------------//-------------------------------------
+
+// 21. Write a program to multiply the adjacent values of an array and store it in an
+// another array
+// a. Program should accept an array
+// b. Multiply the adjacent values
+// c. Store the result into another array
+// Eg:
+// Enter the array limit
+// 5
+// Enter the values of array
+// 1 2 3 4 5
+// Output
+// 2 6 12 20
+
+// const read = require('prompt-sync')();
+
+// let limit = read('Enter the array limit')
+// console.log("Enter the values of array")
+//  let array = [];
+//  let array1 =[]
+//  for (let i = 0; i < limit; i++){
+//     array[i] = read();
+//  }
+
+//  for(i = 0 ; i<limit - 1; i++){
+//  array1[i] = array[i] * array[i+1];
+//  }
+//  console.log("Square of each element: ", array1);
+
+// 17. Write a menu driven program to do the basic mathematical operations such as
+// addition, subtraction, multiplication and division (hint: use if else ladder or switch)
+// a. Program should have 4 functions named addition(), subtraction(),
+// multiplication() and division()
+// b. Should create a class object and call the appropriate function as user prefers
+// in the main function
+
+// const read = require('prompt-sync')();
+
+// let val1 = parseFloat(read('Enter first value: ')); 
+// let val2 = parseFloat(read('Enter second value: ')); 
+
+
+
+// console.log('Choose an operation: \n 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division');
+// let choice = parseInt(read('Enter the choice: '));  // Convert the choice to an integer
+
+// let result;
+// switch(choice){
+
+//     case 1:
+//     result = val1+val2
+//     // console.log(choice);
+    
+//     break;
+//     case 2:
+//     result = val1-val2
+//     break;
+//     case 3:
+//     result = val1*val2
+//     break;
+//     case 4:
+//     result = val1/val2
+//     break;
+//     default:
+//         console.log("invalid");
+//         result = null
+// }
+// console.log("Result is", result);
+
+
+// similar qustion answer-------------------------
+
+// const read = require('prompt-sync')();
+// let val1 = parseFloat(read("enter the 1st number"))
+// let val2 = parseFloat(read("enter the 2nd number"))
+// console.log('Choose an operation: \n 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division');
+// let choice = parseInt(read("enter the choice: "))
+
+//  class Calculator{
+//     addition(val1,val2){
+//        return val1 + val2
+//     }
+// subtraction(val1,val2){
+//     return val1 - val2
+//  }
+// multiplication(val1,val2){
+//     return val1 * val2
+//  }
+// division(val1,val2){
+//     return val1 / val2
+//  }
+//  }
+
+//  const calc = new Calculator();
+//  switch(choice){
+   
+//         case 1 :
+//             console.log("Result:", calc.addition(val1, val2));
+//             break;
+//         case 2 :
+//             console.log("results:",calc.subtraction(val1,val2));
+//              break;
+//         case 3 :
+//         console.log("results:",  calc.multiplication(val1,val2))
+//              break;
+//         case 4 :
+//         console.log("results:",  calc.division(val1,val2)) 
+//             break;
+
+//         default:
+//         console.log("invalide");
+                    
+//  }  
+
+// ---------------------------------//-------------------------------------
+
+/*
+ 18. Grades are computed using a weighted average. Suppose that the written test
+counts 70%, lab exams 20% and assignments 10%.
+If Arun has a score of
+Written test = 81
+Lab exams = 68
+Assignments = 92
+Arun’s overall grade = (81x70)/100 + (68x20)/100 + (92x10)/100 = 79.5
+Write a program to find the grade of a student during his academic year.
+a. Program should accept the scores for written test, lab exams and
+assignments
+b. Output the grade of a student (using weighted average)
+Eg:
+Enter the marks scored by the students
+Written test = 55
+Lab exams = 73
+Assignments = 87
+Grade of the student is 61.8
+*/
+
+// const read = require('prompt-sync')();
+// console.log("Enter the marks scored by the students");
+
+// // let mark = read("Enter the marks scored by the students")
+// let test = read("written test")
+// let labe = read("Lab exams marks ")
+// let assignments = read("Assignment marks ")
+
+// let grade = (test*70)/100 + (labe*20)/100 + (assignments*10)/100
+// console.log("Grade of the student is ",grade)
+
+// ---------------------------------//-------------------------------------
+
+/*
+19. Income tax is calculated as per the following table
+Annual Income Tax percentage
+Up to 2.5 Lakhs No Tax
+Above 2.5 Lakhs to 5
+Lakhs
+5%
+Above 5 Lakhs to 10
+Lakhs
+20%
+Above 10 Lakhs to 50
+Lakhs
+30%
+Write a program to find out the income tax amount of a person.
+a. Program should accept annual income of a person
+Output the amount of tax he has to pay
+Eg 1:
+Enter the annual income
+495000
+Income tax amount = 24750.00
+Eg 2:
+Enter the annual income
+500000
+Income tax amount = 25000.00
+
+*/
+// const read = require('prompt-sync')();
+// let annualIncom = parseInt(read("Enter the annual income "))
+// let taxAmount = 0;
+// if(annualIncom<250000){
+//     console.log("No Tax");
+// }else if(annualIncom>=2,5000 && annualIncom<= 500000){
+//     taxAmount = (annualIncom*5)/100
+// }else if(annualIncom>500000 && annualIncom<= 1000000){
+//     taxAmount = (annualIncom*20)/100
+// }else if(annualIncom>1000000 && annualIncom<= 5000000){
+//     taxAmount = (annualIncom*30)/100
+// }else {
+//     console.log("invalid");
+// }
+// console.log("Income tax amount = ",taxAmount);
+
+// ---------------------------------//-------------------------------------
+
+/*
+20. Write a program to print the following pattern using for loop
+1
+2 3
+4 5 6
+7 8 9 10
+*/
+// let limit = 5
+// let string = ""
+// let val = 1
+
+// for(i=1;i<=limit;i++){
+//     for(j=1;j<=i;j++){
+//     // string = string + i
+//     string = string + val
+//     val++
+//     }
+//     string += "\n";
+// }
+// console.log(string)
+
+// ---------------------------------//-------------------------------------
+
+/*
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+ */
+// let limit = 5
+// let string = ""
+// for(i=0;i<=limit;i++){
+//     for(j=0;j<i;j++){
+     
+//         string = string + "* "
+//     }
+//     string += "\n";
+
+// }
+// console.log(string)
+
+// ---------------------------------//-------------------------------------
 
