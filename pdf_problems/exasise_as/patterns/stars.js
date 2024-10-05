@@ -405,26 +405,225 @@ do the problem
 */
 
 
-let n = 5
-let string = ""
+// let n = 5
+// let string = ""
 
-for(i= 1; i<=n ; i++){
-   for(j=1 ; j<=i ; j++){
-       string += "*"
-   }
-   for(s=n ; s>i ; s--){
-      string += " "
-   }
-   for(s=n ; s>i ; s--){
-      string += " "
-   }
-   for(j=1 ; j<=i ; j++){
-      string += "*"
-  }
-    string += "\n"
-}
-console.log(string);
+// for(i= 1; i<=n ; i++){
+//    for(j=1 ; j<=i ; j++){
+//        string += "*"
+//    }
+//    for(s=n ; s>i ; s--){
+//       string += " "
+//    }
+//    for(s=n ; s>i ; s--){
+//       string += " "
+//    }
+//    for(j=1 ; j<=i ; j++){
+//       string += "*"
+//   }
+//     string += "\n"
+// }
+// console.log(string);
 
 // ---------------------------------//-------------------------------------
 
+/*
+********
+***  ***
+**    **
+*      *
+
+*/
+// let n = 4
+// let string = ""
+
+// for(i= 1; i<=n ; i++){
+//    for(j=n ; j>=i ; j--){
+//        string += "*"
+//    }
+
+//    for(s= 1; s<i ; s++){
+//     string += " "
+//  }   
+//  for(s= 1; s<i ; s++){
+//   string += " "
+// }
+//  for(j=n ; j>=i ; j--){
+//      string += "*"
+//  }
+//     string += "\n"
+
+// }
+
+// for(i= 1; i<=n ; i++){
+
+//    string += "\n"
+
+//  }
+// console.log(string)
+
+// ---------------------------------//-------------------------------------
+/*
+
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+
+*/
+
+// let n = 5
+// let string = ""
+
+// for(i= 1; i<n ; i++){
+//    for(j=1 ; j<=i ; j++){
+//        string += "*"
+//    }
+//    for(s=n ; s>i ; s--){
+//       string += " "
+//    }
+//    for(s=n ; s>i ; s--){
+//       string += " "
+//    }
+//    for(j=1 ; j<=i ; j++){
+//       string += "*"
+//   }
+//     string += "\n"
+// }
+
+// ///////////
+// for(i= 1; i<=n ; i++){
+//    for(j=n ; j>=i ; j--){
+//        string += "*"
+//    }
+
+//    for(s= 1; s<i ; s++){
+//     string += " "
+//  }   
+//  for(s= 1; s<i ; s++){
+//   string += " "
+// }
+//  for(j=n ; j>=i ; j--){
+//      string += "*"
+//  }
+//     string += "\n"
+
+// }
+
+// for(i= 1; i<=n ; i++){
+
+//    string += "\n"
+
+//  }
+// console.log(string)
+
+// ---------------------------------//-------------------------------------
+
+/*
+
+* 
+* *
+*
+* * *
+*
+*
+* * * *
+*
+*
+*
+* * * * *
+
+*/
+// let n = 5
+// let string = ""
+
+//  for(i= 1; i<=n ; i++){
+  
+
+//    for(j=1 ; j<=i ; j++){
+//        string += "* "
+//    }
+//     string += "\n"
+//    if (i==n){
+//     break;
+//    }
+//   for(s=0;s<i-1;s++){
+//         string += "*\n"
+//   } 
+// }
+// console.log(string);
+
+/*
+*
+* * 
+*
+*
+*
+* * * *
+*
+*
+*
+*
+*
+* * * * * *
+
+*/
+
+// let n = 3
+// let string = ""
+
+//  for(i= 1; i<=n ; i++){
+  
+
+//    for(j=0 ; j<i*2 ; j++){
+//        string += "* "
+//    }
+//    string += "\n"
+//    if (i==n){
+//     break;
+//    }
+//   for(s=1;s<j+2;s++){
+//         string += "*\n"
+//   }
+    
+// }
+// console.log(string);
+
+/*
+
+*
+* *
+*
+*
+* * * *
+*
+*
+*
+*
+* * * * * *
+*/
+
+// let n = 3;
+// let string = "*\n";
+
+// for (let i = 1; i <= n; i++) {
+//     // Print '*' in a line with spacing
+//     for (let j = 0; j < i * 2; j++) {
+//         string += "* ";
+//     }
+//     string += "\n";
+
+//     if (i === n) {
+//         break;
+//     }
+//     for (let s = 0; s < (i * 2); s++) {
+//         string += "*\n";
+//     }
+// }
+// console.log(string);
 

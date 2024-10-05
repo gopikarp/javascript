@@ -1,13 +1,10 @@
-t = 5
-let string = ""
-let val = 1
+const read = require('prompt-sync')();
+let my_string = read("enter")
 
-for(i=1;i<=limit;i++){
-    for(j=1;j<=i;j++){
-    // string = string + i
-    string = string + val
-    val++
-    }
-    string += "\n";
+let str = my_string.split("").reverse("").join() 
+
+if(my_string == str){
+    console.log("good");
+}else{
+    console.log("not good");
 }
-console.log(string)

@@ -358,17 +358,19 @@ Output: Sum of 2 arrays is:
 // console.log(array3)
 
 // ---------------------------------//-------------------------------------
+/*
 
-// 15. Write a program to accept an array and display it on the console using functions
-// a. Program should contain 3 functions including main() function
-// main()
-// 1. Declare an array
-// 2. Call function getArray()
-// 3. Call function displayArray()
-// getArray()
-// 1. Get values to the array
-// displayArray()
-// 1. Display the array values
+15. Write a program to accept an array and display it on the console using functions
+a. Program should contain 3 functions including main() function
+main()
+1. Declare an array
+2. Call function getArray()
+3. Call function displayArray()
+getArray()
+1. Get values to the array
+displayArray()
+1. Display the array values
+*/
 
 // const read = require('prompt-sync')();
 
@@ -663,4 +665,192 @@ Income tax amount = 25000.00
 // console.log(string)
 
 // ---------------------------------//-------------------------------------
+
+/*
+21. Write a program to multiply the adjacent values of an array and store it in an
+another array
+a. Program should accept an array
+b. Multiply the adjacent values
+c. Store the result into another array
+Eg:
+Enter the array limit
+5
+Enter the values of array
+1 2 3 4 5
+Output
+2 6 12 20
+*/
+
+// const read = require('prompt-sync')()
+// let limit = read("Enter the array limit ")
+// let array1 = []
+// let array2 = []
+// for(let i=1 ; i<=limit ; i++){
+//     array1[i]=read()
+// }
+
+// for(let i=1 ; i<limit ; i++){
+
+//     array2[i]= array1[i]*array1[i+1]
+
+//     console.log(array2[i]);
+// }
+
+// ---------------------------------//-------------------------------------
+
+/*
+22. Write a program to add the values of two 2D arrays
+a. Program should contains 3 functions including the main function
+main()
+1. Call function getArray()
+2. Call function addArray()
+3. Call function displayArray()
+getArray()
+1. Get values to the array
+getArray()
+1. Add array 1 and array 2
+displayArray()
+1. Display the array values
+Eg:
+Enter the size of array
+2
+Enter the values of array 1
+1 2
+3 4
+Enter the values of array 2
+5 6
+7 8
+Output:
+Sum of array 1 and array 2:
+6 8
+10 12
+
+*/
+// const read = require('prompt-sync')();
+// let array1 = []
+// let array2 = []
+// let array3 = []
+// let limit = parseInt(read('Enter the size of array '))
+// function main(){
+//      getArray()
+//      addArray()
+//      displayArray()
+
+
+// function  getArray(){
+
+// console.log("Enter the values of array 1");
+//     for(i= 0; i<limit ; i++){
+//       array1[i]=[]
+//       for(j= 0; j<limit ; j++){
+//      array1[i] [j]= read()
+//       }
+
+// }
+// console.log("Enter the values of array 2");
+//     for(i= 0; i<limit ; i++){
+//       array2[i]=[]
+//       for(j= 0; j<limit ; j++){
+//      array2[i] [j]= read()
+//       }
+// }
+// }
+// function  addArray(){
+//     for(i= 0; i<limit ; i++){
+//         array3[i] = []
+//         for(j= 0; j<limit ; j++){
+//             array3[i][j] = parseInt(array1[i][j]) + parseInt(array2[i][j]);
+//         }   
+//     }
+//     }
+
+//     function displayArray(){
+//         console.log(array3);
+        
+//     }
+// }
+// main()
+
+// ---------------------------------//-------------------------------------
+
+/*
+24. Write a menu driven program to calculate the area of a given object.
+a. Program should contain two classes
+i. Class 1: MyClass
+ii. Class 2: Area
+b. Class MyClass should inherit class Area and should contain the following
+functions
+i. main()
+ii. circle()
+iii. square()
+iv. rectangle()
+v. triangle()
+c. Class Area should contain the following functions to calculate the area of
+different objects
+i. circle()
+ii. square()
+iii. rectangle()
+iv. triangle()
+Class MyClass extends Area{
+public static void main(string args[]){
+}
+circle() {
+}
+square() {
+}
+rectangle() {
+}
+triangle() {
+}
+}
+Class Area{
+circle(){
+}
+square(){
+}
+rectangle() {
+}
+triangle() {
+}
+}
+Eg 1:
+Enter your choice
+1. Circle
+2. Square
+3. Rectangle
+4. Triangle
+2
+Enter the length
+2
+Output
+Area of the square is: 4
+Eg 2:
+Enter your choice
+1. Circle
+2. Square
+3. Rectangle
+4. Triangle
+1
+Enter the radius
+3
+Output
+Area of the circle is: 28.26
+*/
+
+// class MyClass extends Area {
+//     circle(){}
+//     square(){}
+//     rectangle(){}
+//     triangle(){}
+// }
+// class Area{
+//     circle(){}
+//     square(){}
+//     rectangle(){}
+//     triangle(){}
+// }
+
+
+// ---------------------------------//-------------------------------------
+
 
