@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "express": "^4.21.1",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "name": "project-js",
+  "version": "1.0.0",
+  "description": "node \"d:\\project js\\node_mini_project\\Basic_project\\package\\express_package.js\"",
+  "main": "node \"d:\\project js\\node_mini_project\\Basic_project\\package\\express_package.js\"",
+  "scripts": {
+    "test": "npm install express"
+  },
+  "repository": {
+    "type": "git",
+    "url": "npm install express"
+  },
+  "author": "",
+  "license": "ISC"
 }

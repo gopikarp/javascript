@@ -16,7 +16,7 @@
 // console.log(result)
 
 
-//3. Write a program to find the simple interest 
+//3. Write a program to find the simple interest
 // const read = require("prompt-sync")();
 // var p = read("Principal amount ")
 // var r = read("Interest rate ")
@@ -45,7 +45,7 @@
 // }
 
 
-// 5. Write a program to show the grade obtained by a student after he/she enters 
+// 5. Write a program to show the grade obtained by a student after he/she enters
 // their total mark percentage.
 
 // const read = require("prompt-sync")()
@@ -69,7 +69,7 @@
 //     console.log("invalied")
 // }
 
-// 6. Using the ‘switch case’ write a program to accept an input number from the 
+// 6. Using the ‘switch case’ write a program to accept an input number from the
 // user and output the day as follows
 
 //  const read = require("prompt-sync")()
@@ -87,7 +87,7 @@
 //             break;
 //     case 3:
 //             console.log("Wednesday");
-//             break;   
+//             break;
 //      case 4:
 //         console.log("Thursday");
 //         break;
@@ -96,7 +96,7 @@
 //         break;
 //     case 5:
 //             console.log("Saturday");
-//             break;        
+//             break;
 //         default :
 //         console.log("invalied")
 // }
@@ -110,7 +110,7 @@
 
 //  for(i=1;i<=10;i++){
 //     console.log(i +"x"+num+"="+i*num);
-    
+
 //  }
 
 
@@ -171,7 +171,7 @@ ans:  */
 //  let limit = read("Enter the size of arrays: ")
 
 //  console.log("Enter the values of Array 1: ");
- 
+
 //  for(i=0;i<limit;i++){
 //     array1[i]=read()
 //  }
@@ -200,7 +200,7 @@ ans:  */
 // }
 // for(i=0; i<EnterVal;i++){
 //     console.log("enterd value " + i + ":"+array[i]);
-    
+
 // }
 //---------------------------------//-------------------------------------
 
@@ -267,12 +267,12 @@ Output: Sorted array:
 
 //         }
 //     }
-  
+
 // }
 // console.log("Sorted array: ");
 // for(i=0;i<limit;i++){
 //     console.log(array[i]);
-    
+
 // }
 //---------------------------------//-------------------------------------
 
@@ -300,17 +300,17 @@ Output: Entered string is not a palindrome
 
 // if(inp == joinStr){
 //     console.log(" Entered string is a palindrome");
-    
+
 // }else{
 //     console.log("Entered string is not a palindrome");
-    
+
 // }
 // ---------------------------------//-------------------------------------
 
 /*
 
 14. Write a program to add to two dimensional arrays
-a. Program should accept two 2D arrays and display its sum
+a. Program should accept two   arrays and display its sum
 Eg: Output: Enter the size of arrays
 Input: 3
 Output: Enter the values of array 1
@@ -465,8 +465,8 @@ displayArray()
 
 // const read = require('prompt-sync')();
 
-// let val1 = parseFloat(read('Enter first value: ')); 
-// let val2 = parseFloat(read('Enter second value: ')); 
+// let val1 = parseFloat(read('Enter first value: '));
+// let val2 = parseFloat(read('Enter second value: '));
 
 
 
@@ -479,7 +479,7 @@ displayArray()
 //     case 1:
 //     result = val1+val2
 //     // console.log(choice);
-    
+
 //     break;
 //     case 2:
 //     result = val1-val2
@@ -522,7 +522,7 @@ displayArray()
 
 //  const calc = new Calculator();
 //  switch(choice){
-   
+
 //         case 1 :
 //             console.log("Result:", calc.addition(val1, val2));
 //             break;
@@ -533,13 +533,13 @@ displayArray()
 //         console.log("results:",  calc.multiplication(val1,val2))
 //              break;
 //         case 4 :
-//         console.log("results:",  calc.division(val1,val2)) 
+//         console.log("results:",  calc.division(val1,val2))
 //             break;
 
 //         default:
 //         console.log("invalide");
-                    
-//  }  
+
+//  }
 
 // ---------------------------------//-------------------------------------
 
@@ -645,18 +645,18 @@ Income tax amount = 25000.00
 
 /*
 
-* 
-* * 
-* * * 
-* * * * 
-* * * * * 
+*
+* *
+* * *
+* * * *
+* * * * *
 
  */
 // let limit = 5
 // let string = ""
 // for(i=0;i<=limit;i++){
 //     for(j=0;j<i;j++){
-     
+
 //         string = string + "* "
 //     }
 //     string += "\n";
@@ -760,16 +760,90 @@ Sum of array 1 and array 2:
 //         array3[i] = []
 //         for(j= 0; j<limit ; j++){
 //             array3[i][j] = parseInt(array1[i][j]) + parseInt(array2[i][j]);
-//         }   
+//         }
 //     }
 //     }
 
 //     function displayArray(){
 //         console.log(array3);
-        
+
 //     }
 // }
 // main()
+
+// ---------------------------------//-------------------------------------
+
+
+
+// const read = require('prompt-sync')();
+// let array1 = []
+// let array2 = []
+
+// let limit = read(' Enter the array limit')
+
+// console.log(" Enter the values of array");
+// for(i=1;i<=limit;i++){
+//     array1[i]=read()
+// }
+
+// for(i=1;i<limit;i++){
+//     array2[i] = array1[i]*array1[i+1]
+// }
+// console.log("Output : " + array2);
+
+
+// ---------------------------------//-------------------------------------
+
+
+/*
+23. Write an object oriented program to store and display the values of a 2D array
+a. Program should contains 3 functions including the main function
+main()
+1. Declare an array
+2. Call function getArray()
+3. Call function displayArray()
+getArray()
+1. Get values to the array
+displayArray()
+1. Display the array values
+Eg:
+Enter the size of array
+3
+Enter the array values
+1 2 3
+4 5 6
+7 8 9
+Array elements are:
+1 2 3
+4 5 6
+7 8 9
+
+*/
+// const read = require('prompt-sync')();//
+// function main() {
+//     // const read = require('prompt-sync')();
+// let limit = read('Enter the size of array');
+// console.log('Enter the array values');
+// garray = getArray(limit)
+// displayArray(garray)
+// }
+// main()
+// function getArray(limit){
+//     // const read = require('prompt-sync')();
+// let array = []
+// for(i=0;i<limit;i++){
+//     array[i] = []
+//     for(j=0;j<limit;j++){
+//         array[i][j] = read()
+//     }
+// }
+// return array
+
+// }
+// function displayArray(ar){
+//     console.log(ar);
+// }
+
 
 // ---------------------------------//-------------------------------------
 
@@ -837,20 +911,362 @@ Output
 Area of the circle is: 28.26
 */
 
-// class MyClass extends Area {
-//     circle(){}
-//     square(){}
-//     rectangle(){}
-//     triangle(){}
-// }
-// class Area{
-//     circle(){}
-//     square(){}
-//     rectangle(){}
-//     triangle(){}
+
+// class Area {
+//     circle(radius) {
+//         let CircleArea = Math.PI * (radius * radius)//Area of Circle= π×r2
+//         console.log("Area of the circle = ", CircleArea);
+//     }
+//     square(side) {
+//         let AreaSquare = side * side
+//         console.log("Area of the square = " , AreaSquare);
+//     }
+//     rectangle(length, width) {
+//         let AreaRectangle = length * width
+//         console.log("Area of the rectanlge = " + AreaRectangle);
+//     }
+//     triangle(base, height) {
+//         let AreaTriangle = (base * height) / 2
+//         console.log("Area of the triangle = " + AreaTriangle);
+
+//     }
 // }
 
+// class MyClass extends Area {
+//     circle(val) {
+//         super.circle(val)
+//     }
+//     square(val) {
+//         super.square(val)
+//     }
+//     rectangle(val1,val2) {
+//         super.rectangle(val1,val2)
+//     }
+//     triangle(val1,val2) {
+//         super.triangle(val1,val2)
+//     }
+// }
+
+// const read = require('prompt-sync')();
+// let clz = new MyClass();
+
+// console.log("Enter your choice\n1. Circle \n2. Square\n3. Rectangle\n4. Triangle");
+// let choice = parseInt(read("---"))
+// switch (choice) {
+//     case 1:
+//         let radius = parseInt(read("Enter the radius "))
+//       clz.circle(radius)
+//       break;
+//       case 2:
+//         let side = parseInt(read("Enter the length "))
+//       clz.square(side)
+//       break;
+
+//       case 3:
+//         let length = parseInt(read("Enter the length "))
+//         let width = parseInt(read("Enter the width "))
+//       clz.rectangle(length,width)
+//       break;
+//       case 4:
+//         let base = parseInt(read("Enter the base "))
+//         let height = parseInt(read("Enter the height "))
+//       clz.triangle(base,height)
+//       break;
+
+//       default:
+// console.log('Invalid entry!!!');
+
+
+// }
+/////------------------------------------------same model
+// class Perimeter {
+//     circle(radius) {
+//         let cir = 2 * Math.PI * radius
+//         console.log(cir);
+
+//     }
+
+//     square(sidelength) {
+//         let sq = 4 * sidelength
+//         console.log("Perimeter of square:", sq);
+//     }
+
+//     rectangle(length, width) {
+//        let rec = 2 * (length + width)
+//         console.log("Perimeter of rectangle:", rec);
+//     }
+// }
+
+// class ShapeCalculator extends Perimeter {
+//     circle(val) {
+//         super.circle(val)
+//     }
+
+//     square(val) {
+//         super.square(val)
+//     }
+
+//     rectangle(val, val2) {
+//         super.rectangle(val, val2)
+//     }
+// }
+
+// const read = require('prompt-sync')();
+// let shapeCal = new ShapeCalculator();
+
+
+// console.log("Enter your choice: \n1 Circle \n2 Square \n3 Rectangle");
+// let choice = parseInt(read())
+// if(choice==1){
+//     let radius = parseInt(read("enter the radius"))
+//             shapeCal.circle(radius)
+// }else if(choice==2){
+//     let length = parseInt(read("enter the sidelength"))
+//             shapeCal.square(length)
+// }else if(choice==3){
+//     let rec = parseInt(read("enter the rectangle"))
+//             shapeCal.rectangle(rec)
+// }else{
+//     console.log('Invalid entry!!!');
+// }
+/////////--------------------switch
+// let choice = parseInt(read())
+// switch (choice) {
+//     case 1:
+//         let radius = parseInt(read("enter the radius"))
+//         shapeCal.circle(radius)
+//         break;
+//     case 2:
+//         let length = parseInt(read("enter the sidelength"))
+//         shapeCal.square(length)
+//         break;
+//     case 3:
+//         let rec = parseInt(read("enter the rectangle"))
+//         shapeCal.rectangle(rec)
+//         break;
+//     default:
+//         console.log('Invalid entry!!!');
+// }
+// ---------------------------------//-------------------------------------
+
+/*
+25. Write a Javascript program to display the status (I.e. display book name, author
+name & reading status) of books. You are given an object library in the code's template. It
+contains a list of books with the above mentioned properties.Your task is to display the
+following:
+● If the book is unread:
+You still need to read '<book_name>' by <author_name>.
+● If the book is read:
+Already read '<book_name>' by <author_name>.
+ */
+// var library = [
+//     {
+//         title: 'Bill Gates',
+//         author: 'The Road Ahead',
+//         readingStatus: true
+//     },
+//     {
+//         title: 'Steve Jobs',
+//         author: 'Walter Isaacson',
+//         readingStatus: true
+//     },
+//     {
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         author: 'Suzanne Collins',
+//         readingStatus: false
+//     }
+// ];
+
+// for (i = 0; i < library.length;i++){
+//     if(library[i].readingStatus === false){
+//         console.log(`You still need to read
+//            ${library[i].title} by ${library[i].author}`);
+//     }else{
+//         console.log(`Already read
+//             ${library[i].title} by ${library[i].author}`);
+//     }
+// }
+
+// ---------------------------------//-------------------------similar sample qustion
+
+// var library = [
+//     {
+//         title: 'The Hobbit',
+//         creator: 'J.R.R. Tolkien',
+//         type: 'book',
+//         status: true
+//     },
+//     {
+//         title: 'The Godfather',
+//         creator: 'Francis Ford Coppola',
+//         type: 'movie',
+//         status: false
+//     },
+//     {
+//         title: '1984',
+//         creator: 'George Orwell',
+//         type: 'book',
+//         status: false
+//     },
+//     {
+//         title: 'Pulp Fiction',
+//         creator: 'Quentin Tarantino',
+//         type: 'movie',
+//         status: true
+//     }
+// ];
+
+// for(const item of library){
+//     switch(item.type){
+//         case 'book' :
+//             if(item.status === true){
+//                 console.log("Already read the book '" + item.title + " by " + item.creator + ".");
+//             }else{
+//                 console.log( "You still need to read the book '" + item.title  + " by " + item.creator );
+
+//             }
+//             break;
+//         case 'movie' :
+//             if(item.status === true){
+//                 console.log("Already watched the movie " + item.title  + " by " + item.creator );
+//             }else{
+//                 console.log( "You still need to watche the movie " + item.title  + " by " + item.creator );
+
+//             }
+//             break;
+//     }
+
+// }
+// ---------------------------------//-------------------------------------
+
+/*
+26. Given a variable named my_string, try reversing the string using
+my_string.split().reverse().join() and then print the reversed string to the console. If the try
+clause has an error, print the error message to the console. Finally, print the typeof of the
+my_string variable to the console.
+Output format:
+The statement to print in the tryblock is:
+Reversed string is : ${my_string}
+The statement to print in the catchblock is:
+Error : ${err.message}
+The statement to print in the finally block is:
+Type of my_string is : ${typeof my_string}
+*/
+
+
+// const read = require('prompt-sync')();
+
+// let my_string = read('Enter a string: ')
+// let new_my_string = my_string.split("").reverse().join("")
+// let num = Number(my_string)
+
+// try {
+//     if (isNaN(num)) {
+//         throw `Reversed string is : ${new_my_string}`
+//     } else {
+//         throw "Error : my_string.split is not a function"
+//     }
+
+// } catch (e) {
+//     console.log(e);
+// }
+
+// finally {
+//     console.log(`Type of my_string is : ${typeof num}`);
+// }
+
+// ---------------------------------//-------------------------------------
+/*
+27. Given a variable named userHeight, you must throw errors under the following
+conditions:
+● notANumberError- When userHeight is NaN
+● HugeHeightError – When userHeight is greater than 200
+● TinyHeightError - When userHeight is less than 40
+ */
+// const read = require('prompt-sync')();
+// let height = read("input your height: ")
+// let num = Number(height)
+
+
+// try {
+//     if (isNaN(num)) throw "userHeight is NaN"
+//     if(num>200) throw "HugeHeightError"
+//     if(num<40) throw "TinyHeightError"
+// } catch (e) {
+//     console.log(e);
+
+// }
+// if(num<=200 && num>=40){
+//     console.log("valid");
+// }
 
 // ---------------------------------//-------------------------------------
 
+
+/*
+ 28. Create a constructor function that satisfies the following conditions:
+a. The name of the constructor function should be Car.
+b. It should take three parameters: name, mileage and max_speed.
+c. Store these parameter values in their respective thiskeywords:
+this.name, this.mileage and this.max_speed.
+ */
+
+// function car(name, mileage, max_speed) {
+//     this.name = name,
+//         this.mileage = mileage,
+//         this.max_speed = max_speed
+// }
+
+// const carOb = new car("maruthi", 24.8, "165 kilometers")
+
+// console.log(carOb);
+
+// console.log(`${carOb.name} has a mileage of ${carOb.mileage} and
+//     max speed above ${carOb.max_speed}`);
+
+// ---------------------------------//-------------------------------------
+
+
+/*
+29. Write a myFilter function that takes 2 parameters: myArray and callback. Here,
+myArray is an array of numbers and callback is a function that takes the elements of
+myArray as its parameter and returns a boolean true if the sum of the number is even or
+false if the sum of the number is odd.
+The myFilter function should return the sum of the array.
+a) Sample Input
+12345
+b) Sample Output
+15
+ */
+
+// const read = require('prompt-sync')();
+// function myFilter() {
+//     let limit = parseInt(read("Enter array size :"))
+//     let myArray = []
+//     console.log("enter the numbers");
+//     for (i = 0; i < limit; i++) {
+//         myArray[i] = parseInt(read())
+//     }
+//     callBack(myArray, add)
+
+// }
+// myFilter()
+
+// function add(num, sum) {
+//     sum += num;
+//     return sum;
+// }
+
+// function callBack(arr, add) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum = add(arr[i], sum);
+//     }
+//     console.log(`Sum : ${sum}`);
+//     if (sum % 2 == 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
